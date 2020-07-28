@@ -1,0 +1,17 @@
+version: "2.1"
+
+services:
+  webreactjs:
+    tty: true
+    image: 60f669664ee7
+    build: .
+    ports:
+      - 3000:3000
+    restart: always
+  servergo:
+    tty: true
+    image: 4635385a1348
+    build: .
+    ports:
+      - 8080:8080
+    restart: always
